@@ -1,0 +1,15 @@
+GET http://localhost:5000/?user=bryan&comment=320320
+
+### 
+
+GET http://localhost:3000/get-data
+
+###
+POST http://localhost:5000/register-user
+Content-Type: application/json
+
+{
+    "username": "bryan"
+}
+###
+GET http://localhost:5000/user/get-user

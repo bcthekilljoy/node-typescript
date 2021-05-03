@@ -1,0 +1,49 @@
+
+###
+POST http://localhost:5000/user/create-user
+Content-Type: application/json
+
+{
+    "first_name": "Bryan",
+    "last_name": "Wong",
+    "contact_number": "456",
+    "emergency": { "contact_number": "789", "person": "Stacy" },
+    "address":{"location": "608693a4d5343234cc9763f6"}
+}
+
+###
+POST http://localhost:5000/user/update-user
+Content-Type: application/json
+
+{
+    "_id":"6086efea3fda543744b7d4db",
+    "field":"first_name",
+    "info":"Breanne2"
+}
+
+###
+GET http://localhost:5000/user/find-user?search=Breanne2
+
+###
+PATCH http://localhost:5000/user/delete-user
+Content-Type: application/json
+
+{
+    "info":"608c180be3f7014c88f9e9ea"
+}
+
+###
+POST http://localhost:5000/location/create-location
+Content-Type: application/json
+
+{
+    "name":"Solano",
+    "rate":0
+}
+
+###
+GET http://localhost:5000/user/filter?last_name=Wong
+
+
+###
+GET http://localhost:5000/user/fetch-user

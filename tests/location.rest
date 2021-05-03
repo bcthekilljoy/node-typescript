@@ -1,0 +1,12 @@
+
+###
+POST http://localhost:5000/location/create-location
+Content-Type: application/json
+
+{
+    "name":"qqq",
+    "rate":0
+}
+
+###
+GET http://localhost:5000/location/fetch-location

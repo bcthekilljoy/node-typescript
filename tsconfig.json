@@ -7,13 +7,13 @@
     "outDir": "build",
     "moduleResolution": "node",
     "removeComments": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -21,7 +21,9 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "allowJs": true
+    "allowJs": true,
+    "rootDir": "src",
+    "skipLibCheck": true
   },
   "exclude": ["node_modules", "build"],
   "include": ["./src/**/*.tsx", "./src/**/*.ts"]
